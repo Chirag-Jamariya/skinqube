@@ -20,7 +20,7 @@ const MyCarousel = () => {
     },
     {
       image: require('.././assets/doc1.jpg'),
-      heading: 'Join #Skinify:',
+      heading: 'Join #SkinQube:',
       text: 'See amazing skincare transformations from our community.',
     },
   ];

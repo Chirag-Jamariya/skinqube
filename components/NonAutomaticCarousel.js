@@ -9,18 +9,18 @@ const NonAutomaticCarousel = () => {
 
   const data = [
     {
-      image: require('.././assets/doc1.jpg'),
+      image: require('.././assets/skin.jpg'),
       heading: 'Your Personalised Skincare AI',
       text: 'Get expert guidance with AI skin analysis & customized routines.',
     },
     {
-      image: require('.././assets/doc2.jpg'),
+      image: require('.././assets/skin.jpg'),
       heading: 'Struggling with breakouts or dryness?',
       text: 'Get personalized solutions to achieve your skin goals.',
     },
     {
-      image: require('.././assets/doc1.jpg'),
-      heading: 'Join #Skinify:',
+      image: require('.././assets/skin.jpg'),
+      heading: 'Join #SkinQube:',
       text: 'See amazing skincare transformations from our community.',
     },
   ];
@@ -61,7 +61,7 @@ const NonAutomaticCarousel = () => {
 const styles = StyleSheet.create({
   slide: {
     width: screenWidth,
-    height: '90%',
+    height: '100%',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#fff',

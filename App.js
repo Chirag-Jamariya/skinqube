@@ -8,7 +8,6 @@ import CameraScreen from './screens/CameraScreen';
 import Home from './screens/Home';
 import Account from './screens/Account';
 import Settings from './screens/Settings';
-import Navbar from './components/Navbar';
 
 
 const Stack = createStackNavigator();
