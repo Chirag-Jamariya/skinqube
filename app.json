@@ -1,23 +1,28 @@
 {
   "expo": {
-    "name": "skinqube",
-    "slug": "skinqube",
+    "name": "ExpoVideoRecordingTutorial",
+    "slug": "ExpoVideoRecordingTutorial",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
@@ -27,14 +32,11 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "Allow skinqube to access your camera",
-          "microphonePermission": "Allow skinqube to access your microphone",
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
           "recordAudioAndroid": true
         }
       ]
-    ],
-    "permissions": [
-      "CAMERA"
     ]
   }
 }
