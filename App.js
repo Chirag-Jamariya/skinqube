@@ -1,20 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Choosing from './screens/Choosing'
+import Blogs from './screens/Blogs';
+import Initial from './screens/Initial';
+import CameraScreen from './screens/CameraScreen';
+import Home from './screens/Home';
+import Account from './screens/Account';
+import Settings from './screens/Settings';
 
-export default function App() {
+
+const Stack = createStackNavigator();
+
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up Skinqube to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Initial">
+      <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Choosing" component={Choosing} />
+        <Stack.Screen name="Blogs" component={Blogs} />
+        <Stack.Screen name="Initial" component={Initial} />
+        <Stack.Screen name="Camera" component={CameraScreen} />
+        <Stack.Screen name="Account" component={Account} />
+        <Stack.Screen name="Settings" component={Settings} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
